@@ -4,16 +4,46 @@
 <head>
     <meta charset="UTF8">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
-    <link rel="Stylesheet" href="test.css">
-    <script defer href="scripts/myscript.js"></script>
+    <link rel="Stylesheet" href="css/index.css">
+    <link rel="Styleshet" href="css/global.css">
     <title>Final Project</title>
 </head>
 
 <nav>
-    <button id="MenuButton">Nav Bar button</button>
+    <button id="Open-Menu" onclick="showModal()">Nav Bar button</button>
     <img id="logo" alt="Logo">
     <img id="profilePic"  alt="Profile Pic">
     <hr>
+
+    <div id="modal" style="display: none; border:1cm">
+        <div id="modal-content" tabindex="-1" > 
+            <button id="Open-Menu" onclick="hideModal()">Close</button>
+            <h2>All Pages</h2>
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="pages/Products.html">Products</a></li>
+                <li><a href="pages/carbonCalculator.html">CarbonCalculator</a></li>
+                <li><a href="pages/Survey.html">Surveys</a></li>
+                <li><a href="pages/profile.html">Profile</a></li>
+                <li><a href="pages/Discount.html">Discounts</a></li>
+                <li><a href="pages/favorites.html">Favorites</a></li>
+                <hr>
+                <li><a href="pages/TermsOfUse.html">Terms Of Use</a></li>
+                <li><a href="pages/PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="pages/ContactUs.html">Contact Us</a></li>
+                <li><a href="pages/About Us">About Us</a></li>
+                <li><a href="pages/FAQ.html">FAQ</a></li>
+            </ul>
+            <br>
+            <a href="pages/LoginSignup.html">LogIn/SignUP</a>
+        </div>
+    </div>
+
+    <script src="scripts/myscripts.js"></script>
 </nav>
+
+<body>
+    <p>PLACEHOLDER TEXT TO SEE HOW EVEYRTHING GOES , YAYYYY</p> 
+</body>
 
 </html>
