@@ -1,3 +1,148 @@
-#modal{
-    background-color: #79707071;
+body, html {
+    margin: 0;
+}
+
+@font-face {
+    font-family:Fontenstein;
+    src: url(../fonts/fontenstein-regular.otf);
+}
+
+@font-face {
+    font-family:Switzer;
+    src: url(../fonts/Switzer-Light.ttf);
+}
+
+@font-face{
+    font-family:Bebas;
+    src : url(../fonts/BebasNeue-Regular.otf)
+}
+
+@font-face{
+    font-family:Grotesk;
+    src : url(../fonts/HostGrotesk-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: Thunder;
+    src: url(../fonts/Thunder-VF.ttf);
+}
+
+
+
+
+
+#navigation {
+    display:flex;
+    align-items: center; /* vertically center items */
+    gap: 3rem;           /* spacing between items */
+    list-style: none;
+    margin: 0;
+    padding: 12px 32px;
+
+}
+
+
+
+
+
+/* optional: size and preserve aspect for images */
+#logo, #profilePic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #CCE3DE;
+}
+
+
+/*For the 2nd Navigation bar*/
+#Nav2 {
+    /* Make the main bar a full-width horizontal flex container using Grotesk */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Grotesk, sans-serif;
+    font-size: 18px;        /* larger font so it's visibly prominent */
+    height: 64px;          /* taller bar */
+    box-sizing: border-box;
+}
+
+#Nav3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2px;
+    margin: 0;
+    padding:0;
+    width: 100%;
+    font-family: Grotesk, sans-serif;
+    font-size: 12px;
+    height: 36px;          /* smaller height */
+    box-sizing: border-box;
+}
+
+
+#Nav2 a {
+    font-family: Switzer; 
+    font-weight: 1000px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px 12px;
+    height: 100%;
+    box-sizing: border-box;
+    min-width: 0;       
+}
+
+#Nav3 a {
+    font-family: Switzer;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(114, 109, 109);
+    text-decoration: none;
+    margin: 0;
+    padding: 6px 10px;    
+}
+
+
+
+#Nav2 li {
+    float: none;         
+    flex: 1 1 auto;        
+    margin: 0;
+    list-style: none;
+}
+
+
+
+/* unvisited link */
+#Nav2 a:link {
+    color: #3c4745;
+}
+
+/* visited link */
+#Nav2 a:visited {
+    color: #48776e00;
+}
+
+/* hovering link */
+#Nav2 a:hover {
+    color: #7486c8;
+    background-color: #b3b7c3;
+}
+
+/* link while selected */
+#Nav2 a:active {
+    color: #363c3b;
 }

@@ -14,6 +14,14 @@ function hideModal() {
   document.body.style.overflow = '';
 }
 
+function displayModal() {
+  if (getComputedStyle(modal).display === 'block') {
+    hideModal();
+  } else {
+    showModal();
+  }
+}
+
 
 // Clicking the backdrop closes (but clicking content does not)
 modal.addEventListener('click', (event) => {

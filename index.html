@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF8">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
-    <link rel="Stylesheet" href="css/index.css">
-    <link rel="Styleshet" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
     <title>Final Project</title>
 </head>
 
 <nav>
-    <button id="Open-Menu" onclick="showModal()">Nav Bar button</button>
-    <img id="logo" alt="Logo">
-    <img id="profilePic"  alt="Profile Pic">
-    <hr>
+    <div>
+        <ul id="navigation">
+            <li><img id="Open-Menu" class="NavEl" src="images/burger Icon.png" alt="Open menu" role="button" tabindex="0" onclick="displayModal()" style="height: 10mm;"></li>
+            <li><img  class="NavEl" id="logo" alt="Logo"></li>
+            <li><img class="NavEl" id="profilePic"  alt="PP"></li>
+            <a href="pages/LoginSignup.html" style="font-family: Grotesk; color: #000000;">Login/SignUP</a>
+        </ul>
+    </div>
 
-    <div id="modal" style="display: none; border:1cm">
+    <div id="modal" >
         <div id="modal-content" tabindex="-1" > 
-            <button id="Open-Menu" onclick="hideModal()">Close</button>
-            <h2>All Pages</h2>
-            <ul>
+            <ul id="Nav2">
                 <li><a href="index.html">HomePage</a></li>
                 <li><a href="pages/Products.html">Products</a></li>
                 <li><a href="pages/carbonCalculator.html">CarbonCalculator</a></li>
@@ -27,23 +29,23 @@
                 <li><a href="pages/profile.html">Profile</a></li>
                 <li><a href="pages/Discount.html">Discounts</a></li>
                 <li><a href="pages/favorites.html">Favorites</a></li>
-                <hr>
-                <li><a href="pages/TermsOfUse.html">Terms Of Use</a></li>
-                <li><a href="pages/PrivacyPolicy.html">Privacy Policy</a></li>
-                <li><a href="pages/ContactUs.html">Contact Us</a></li>
-                <li><a href="pages/About Us">About Us</a></li>
-                <li><a href="pages/FAQ.html">FAQ</a></li>
+            </ul>
+            <ul id="Nav3">
+                <li><a class="SmallPages" href="pages/TermsOfUse.html">Terms Of Use</a></li>
+                <li><a class="SmallPages" href="pages/PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a class="SmallPages" href="pages/ContactUs.html">Contact Us</a></li>
+                <li><a class="SmallPages" href="pages/About Us">About Us</a></li>
+                <li><a class="SmallPages" href="pages/FAQ.html">FAQ</a></li>
             </ul>
             <br>
-            <a href="pages/LoginSignup.html">LogIn/SignUP</a>
         </div>
     </div>
 
-    <script src="scripts/myscripts.js"></script>
 </nav>
 
 <body>
+    <h1 id="BigTitle">SURVEYS</h1>
     <p>PLACEHOLDER TEXT TO SEE HOW EVEYRTHING GOES , YAYYYY</p> 
 </body>
-
+    <script src="scripts/myscripts.js"></script>
 </html>

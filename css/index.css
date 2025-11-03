@@ -1,0 +1,15 @@
+body, html {
+    background-image: url(../images/Background.png);
+}
+
+
+
+#BigTitle{
+    font-family:Thunder;
+    font-style:bold;
+    font-size: 402px;
+    color: #3a624d;
+    position: relative;
+    top: -190px;
+    left: 60px;
+}
