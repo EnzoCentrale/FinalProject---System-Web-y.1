@@ -1,5 +1,6 @@
-// This first part is all for the navigation Bar
 
+
+// This first part is all for the navigation Bar
 const modal = document.getElementById("modal");
 
 // Show modal: set display to block and stop background scrolling
@@ -23,17 +24,5 @@ function displayModal() {
 }
 
 
-// Clicking the backdrop closes (but clicking content does not)
-modal.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    hideModal();
-  }
-});
 
-// Close on Escape key
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && modal.style.display === 'block') {
-    hideModal();
-  }
-  });
 

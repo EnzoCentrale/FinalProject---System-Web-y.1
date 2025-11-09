@@ -27,6 +27,11 @@ body, html {
     src: url(../fonts/Thunder-VF.ttf);
 }
 
+@font-face {
+    font-family: SwitzerBold;
+    src: url(../fonts/Switzer-Bold.otf);
+}
+
 
 
 #logo{
@@ -44,9 +49,6 @@ body, html {
     padding: 12px 32px;
 
 }
-
-
-
 
 
 /* optional: size and preserve aspect for images */
@@ -149,4 +151,38 @@ body, html {
 /* link while selected */
 #Nav2 a:active {
     color: #363c3b;
+}
+
+
+
+/* Footer Section*/
+footer {
+    border-top: 1px solid #000;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#Nav3 {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#Nav3 li a {
+    text-decoration: none;
+    color: black;
+}
+
+#Nav3 li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-weight: bold;
 }
