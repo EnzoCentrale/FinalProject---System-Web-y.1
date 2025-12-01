@@ -1,39 +1,54 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 40px;
-    background-color: #eae7e7;
+    background: #f4f4f4;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 2rem;
+    font-family: Switzer, sans-serif;
 }
 
 .items {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .item-box {
     width: 150px;
-    height: 220px;
-    border: 1px solid #000;
+    height: 150px;
+    border: 2px dashed #ccc;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-weight: bold;
+    align-items: center;
+    font-family: Grotesk, sans-serif;
+    color: #aaa;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Ensures image doesn't spill out */
 }
 
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scales the image to cover the box without distortion */
+    display: none; /* Initially hidden */
+}
 
 .plus {
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: bold;
+    color: #777;
 }
 
 .result p {
@@ -43,6 +58,10 @@ body {
 }
 
 .output {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #415A77;
+    margin-top: 0.5rem;
     width: 200px;
     height: 60px;
     border: 1px solid #000;
