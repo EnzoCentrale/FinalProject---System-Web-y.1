@@ -3,73 +3,58 @@
 
 <head>
     <meta charset="UTF8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/global.css">
     <link rel="stylesheet" type="text/css" href="../css/carbonCalculator.css">
     <title>Final Project</title>
 </head>
 
-<nav>
-    <div>
-        <ul id="navigation">
-            <li><img id="Open-Menu" class="NavEl" src="../images/burger Icon.png" alt="Open menu" role="button" tabindex="0" onclick="displayModal()" style="height: 10mm;"></li>
-            <li><img  class="NavEl" id="logo" alt="Logo"></li>
-            <li><img class="NavEl" id="profilePic"  alt="PP"></li>
-            <a href="LoginSignup.html" style="font-family: Grotesk; color: #000000;">Login/SignUP</a>
-        </ul>
-    </div>
+<body>
+    <nav id="navigation">
+        <img id="logo" src="../images/logo.png" alt="logo">
+        <div id="BigTitle">Carbon Calculator</div>
+        <img id="profilePic" src="../images/profile.png" alt="profile">
+    </nav>
 
-    <div id="modal" >
-        <div id="modal-content" tabindex="-1" > 
-            <ul id="Nav2">
-                <li><a href="../index.html">HomePage</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="carbonCalculator.html">CarbonCalculator</a></li>
-                <li><a href="Survey.html">Surveys</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="Discount.html">Discounts</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
-            </ul>
-            <ul id="Nav3">
+    <ul id="Nav2">
+        <li><a href="../index.html">HomePage</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="carbonCalculator.html">CarbonCalculator</a></li>
+        <li><a href="Survey.html">Surveys</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="Discount.html">Discounts</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+    </ul>
+
+    <ul id="Nav3">
                 <li><a class="SmallPages" href="TermsOfUse.html">Terms Of Use</a></li>
                 <li><a class="SmallPages" href="PrivacyPolicy.html">Privacy Policy</a></li>
                 <li><a class="SmallPages" href="ContactUs.html">Contact Us</a></li>
                 <li><a class="SmallPages" href="AboutUs.html">About Us</a></li>
                 <li><a class="SmallPages" href="FAQ.html">FAQ</a></li>
             </ul>
-            <br>
-        </div>
-    </div>
-
-</nav>
-
-<body>
     <div class="container">
     <div class="items">
         <div class="item">
-        <div class="item-box">CHOOSE ITEM</div>
-        <select class="dropdown">
-            <option value="">Select type</option>
-            <option value="tshirt">T-Shirt</option>
-            <option value="jeans">Jeans</option>
-            <option value="jacket">Jacket</option>
-            <option value="shoes">Shoes</option>
-            <option value="accessory">Accessory</option>
-        </select>
+            <div class="item-box">
+                <span>ITEM 1</span>
+                <img class="preview-image" alt="Image preview">
+            </div>
+            <input type="file" class="image-input" accept="image/*">
+            <p class="detection-text" style="font-size: 12px; color: #999; margin-top: 5px;"></p>
+            <p class="item-result" style="font-weight: bold; margin-top: 5px;"></p>
         </div>
 
         <div class="plus">+</div>
 
         <div class="item">
-        <div class="item-box">CHOOSE ITEM</div>
-        <select class="dropdown">
-            <option value="">Select type</option>
-            <option value="tshirt">T-Shirt</option>
-            <option value="jeans">Jeans</option>
-            <option value="jacket">Jacket</option>
-            <option value="shoes">Shoes</option>
-            <option value="accessory">Accessory</option>
-        </select>
+            <div class="item-box">
+                <span>ITEM 2</span>
+                <img class="preview-image" alt="Image preview">
+            </div>
+            <input type="file" class="image-input" accept="image/*">
+            <p class="detection-text" style="font-size: 12px; color: #999; margin-top: 5px;"></p>
+            <p class="item-result" style="font-weight: bold; margin-top: 5px;"></p>
         </div>
     </div>
 
@@ -78,6 +63,11 @@
         <div class="output">CO2/KG</div>
     </div>
     </div>
+
+    <!-- Removed 'async' to ensure libraries load in the correct order before the main script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="../scripts/carboncalc.js" defer></script>
 </body>
 
 <footer>
@@ -94,8 +84,4 @@
     </div>
 </footer>
 
-
-
-    <script src="../scripts/myscripts.js"></script>
-    <script src="../scripts/carboncalc.js"></script>
 </html>
