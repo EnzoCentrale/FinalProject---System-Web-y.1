@@ -41,6 +41,37 @@
     </div>
 
 </nav>
+<body>
+
+    <div id="ContactContainer">
+
+        <h2>Contact Us</h2>
+
+        <p>If you have any questions or need assistance, feel free to reach us:</p>
+
+        <form id="contactForm">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="button" onclick="contactConfirmation()">Send Message</button>
+
+        </form>
+
+        <p id="confirmationMessage" style="color: green; font-weight:bold;"></p>
+
+    </div>
+
+    <script>
+    function contactConfirmation() {
+        document.getElementById("confirmationMessage").innerHTML = 
+            "✔ Your message has been sent! We will reply soon.";
+        document.getElementById("contactForm").reset();
+    }
+    </script>
+
+</body>
 
 <footer>
     <ul id="Nav3">

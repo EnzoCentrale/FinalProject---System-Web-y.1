@@ -41,9 +41,28 @@
     </div>
 
 </nav>
-<body>
-    test
-</body>
+<div id="PaymentContainer">
+
+    <div id="paymentBox">
+
+        <p class="paymentTitle">PAY WITH:</p>
+
+        <button class="paymentButton" onclick="choosePayment('CREDIT CARD')">CREDIT CARD</button>
+        <button class="paymentButton" onclick="choosePayment('PAYPAL')">PAYPAL</button>
+
+        <p id="resultMessage" style="margin-top:25px; font-weight:bold;"></p>
+
+    </div>
+
+</div>
+
+<script>
+function choosePayment(method) {
+    document.getElementById("resultMessage").innerText = "✔ " + method + " selected — payment processed!";
+}
+</script>
+
+
 
 
 
