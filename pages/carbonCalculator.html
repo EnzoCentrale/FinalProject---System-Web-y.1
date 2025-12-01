@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
     <link rel="stylesheet" type="text/css" href="../css/global.css">
     <link rel="stylesheet" type="text/css" href="../css/carbonCalculator.css">
-    <title>Final Project</title>
 </head>
 
-<body>
-    <nav id="navigation">
-        <img id="logo" src="../images/logo.png" alt="logo">
-        <div id="BigTitle">Carbon Calculator</div>
-        <img id="profilePic" src="../images/profile.png" alt="profile">
-    </nav>
+<nav>
+    <div>
+        <ul id="navigation">
+            <li><img id="Open-Menu" class="NavEl" src="../images/burger Icon.png" alt="Open menu" role="button" tabindex="0" onclick="displayModal()" style="height: 10mm;"></li>
+            <li><p id="logo">GREEN.SURVEYS</p></li>
+            <li><img class="NavEl" id="profilePic"  alt="PP"></li>
+            <a href="LoginSignup.html" style="font-family: Grotesk; color: #000000;">Login/SignUP</a>
+        </ul>
+    </div>
 
-    <ul id="Nav2">
-        <li><a href="../index.html">HomePage</a></li>
-        <li><a href="Products.html">Products</a></li>
-        <li><a href="carbonCalculator.html">CarbonCalculator</a></li>
-        <li><a href="Survey.html">Surveys</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="Discount.html">Discounts</a></li>
-        <li><a href="favorites.html">Favorites</a></li>
-    </ul>
-
-    <ul id="Nav3">
+    <div id="modal" >
+        <div id="modal-content" tabindex="-1" > 
+            <ul id="Nav2">
+                <li><a href="../index.html">HomePage</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="carbonCalculator.html">CarbonCalculator</a></li>
+                <li><a href="Survey.html">Surveys</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="Discount.html">Discounts</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+            </ul>
+            <ul id="Nav3">
                 <li><a class="SmallPages" href="TermsOfUse.html">Terms Of Use</a></li>
                 <li><a class="SmallPages" href="PrivacyPolicy.html">Privacy Policy</a></li>
                 <li><a class="SmallPages" href="ContactUs.html">Contact Us</a></li>
                 <li><a class="SmallPages" href="AboutUs.html">About Us</a></li>
                 <li><a class="SmallPages" href="FAQ.html">FAQ</a></li>
             </ul>
+            <br>
+        </div>
+    </div>
+
+</nav>
+
+
+<body>
     <div class="container">
     <div class="items">
         <div class="item">
@@ -68,6 +82,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="../scripts/carboncalc.js" defer></script>
+    <script src="../scripts/myscripts.js"></script>
 </body>
 
 <footer>
