@@ -12,7 +12,7 @@
     <div>
         <ul id="navigation">
             <li><img id="Open-Menu" class="NavEl" src="../images/burger Icon.png" alt="Open menu" role="button" tabindex="0" onclick="displayModal()" style="height: 10mm;"></li>
-            <li><img  class="NavEl" id="logo" alt="Logo"></li>
+            <li><p id="logo">GREEN.SURVEYS</p></li>
             <li><img class="NavEl" id="profilePic"  alt="PP"></li>
             <a href="LoginSignup.html" style="font-family: Grotesk; color: #000000;">Login/SignUP</a>
         </ul>
@@ -41,7 +41,44 @@
     </div>
 
 </nav>
+<div id="loginBox" style="
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid #000;
+    text-align: center;
+    font-family: Grotesk, sans-serif;
+">
+    <h3 style="margin-bottom: 20px;">LOG IN / SIGNUP</h3>
 
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="EMAIL" required
+            style="width: 90%; padding: 10px; margin-bottom: 15px; border: 1px solid #000;">
+        
+        <input type="password" id="password" placeholder="PASSWORD" required
+            style="width: 90%; padding: 10px; margin-bottom: 20px; border: 1px solid #000;">
+        
+        <button type="submit"
+            style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
+            LOGIN
+        </button>
+    </form>
+</div>
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
+
+        // Save user data locally (simple demo)
+        localStorage.setItem("userEmail", email);
+        localStorage.setItem("userPassword", password);
+
+        // Redirect to next page
+        window.location.href = "profile.html"; // change if needed
+    });
+</script>
 
 <footer>
     <ul id="Nav3">

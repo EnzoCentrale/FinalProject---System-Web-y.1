@@ -186,3 +186,37 @@ footer {
     margin-top: 10px;
     font-weight: bold;
 }
+#PaymentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#paymentBox {
+    border: 1px solid black;
+    width: 220px;
+    padding: 25px;
+    text-align: center;
+}
+
+.paymentTitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.paymentButton {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background: white;
+    font-size: 14px;
+}
+
+.paymentButton:hover {
+    background: black;
+    color: white;
+}

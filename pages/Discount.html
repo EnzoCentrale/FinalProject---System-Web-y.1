@@ -12,7 +12,7 @@
     <div>
         <ul id="navigation">
             <li><img id="Open-Menu" class="NavEl" src="../images/burger Icon.png" alt="Open menu" role="button" tabindex="0" onclick="displayModal()" style="height: 10mm;"></li>
-            <li><img  class="NavEl" id="logo" alt="Logo"></li>
+            <li><p id="logo">GREEN.SURVEYS</p></li>
             <li><img class="NavEl" id="profilePic"  alt="PP"></li>
             <a href="LoginSignup.html" style="font-family: Grotesk; color: #000000;">Login/SignUP</a>
         </ul>
@@ -41,6 +41,68 @@
     </div>
 
 </nav>
+
+<div style="text-align:center; margin-top:30px; font-family:Grotesk, sans-serif;">
+
+    <h3>ALL OUR PARTNERS AND DISCOUNTS IF YOU'RE SUBSCRIBED</h3>
+
+    <div style="
+        width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid #000;
+        font-size: 18px;
+    ">
+        XXX : DISCOUNTS
+    </div>
+
+    <div id="discountList" style="text-align:left; width:300px; margin: 0 auto; line-height:1.6;">
+        
+        <!-- Exemple 1 -->
+        <div style="margin-bottom:20px; border-bottom:1px solid #ccc; padding-bottom:10px;">
+            <p><strong>BRAND NAME : Adidas</strong><br>
+            200 points → 10% off</p>
+            <button onclick="useDiscount('Adidas', '10% off')" 
+                style="padding:5px 10px; cursor:pointer;">Use</button>
+        </div>
+
+     <!-- Exemple 2 -->
+        <div style="margin-bottom:20px; border-bottom:1px solid #ccc; padding-bottom:10px;">
+            <p><strong>BRAND NAME : Nike</strong><br>
+            150 points → 8% off</p>
+            <button onclick="useDiscount('Nike', '8% off')" 
+                style="padding:5px 10px; cursor:pointer;">Use</button>
+        </div>
+
+        <!-- Exemple 3 -->
+        <div style="margin-bottom:20px; border-bottom:1px solid #ccc; padding-bottom:10px;">
+            <p><strong>BRAND NAME : Patagonia</strong><br>
+            250 points → 12% off</p>
+            <button onclick="useDiscount('Patagonia', '12% off')" 
+                style="padding:5px 10px; cursor:pointer;">Use</button>
+        </div>
+
+        <!-- Exemple 4 -->
+        <div style="margin-bottom:20px; border-bottom:1px solid #ccc; padding-bottom:10px;">
+            <p><strong>BRAND NAME : Puma</strong><br>
+            120 points → 5% off</p>
+            <button onclick="useDiscount('Puma', '5% off')" 
+                style="padding:5px 10px; cursor:pointer;">Use</button>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function useDiscount(brand, discount) {
+        alert("You chose : " + brand + " — " + discount + "\n Your code will be applied!");
+        
+        // 👉 Si tu veux envoyer l'utilisateur ailleurs :
+        // window.location.href = "DiscountUsed.html";
+    }
+</script>
+
+
 
 <footer>
     <ul id="Nav3">
