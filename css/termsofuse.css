@@ -1,0 +1,26 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+section {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
