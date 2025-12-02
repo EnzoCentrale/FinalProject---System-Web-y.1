@@ -1,5 +1,5 @@
 body {
-  font-family: Grotesk , sans-serif; /* Grotesk-style font */
+  font-family: Grotesk , sans-serif;
   background-color: #f0f2f5;
   display: flex;
   justify-content: center;
@@ -8,13 +8,22 @@ body {
   margin: 0;
 }
 
-.profile-container {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  padding: 30px;
-  max-width: 400px;
-  width: 100%;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+main {
+  flex: 1;
+  padding: 160px 20px 40px; 
+  max-width: 500px;
+  margin: auto;
   text-align: center;
 }
 
@@ -24,25 +33,31 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
+  border: 3px solid #4CAF50;
 }
 
 .username {
-  font-size: 24px;
-  margin: 10px 0 5px;
-  color: #333;
-  font-weight: 600; /* bold for emphasis */
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .bio {
-  font-size: 14px;
-  color: #777;
+  font-size: 15px;
+  color: #555;
   margin-bottom: 20px;
 }
 
+.profile-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
 .profile-info p {
-  margin: 8px 0;
+  margin: 10px 0;
   font-size: 14px;
-  color: #555;
 }
 
 .profile-info strong {
