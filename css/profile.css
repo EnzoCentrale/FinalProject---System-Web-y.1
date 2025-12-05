@@ -1,9 +1,6 @@
 body {
   font-family: Grotesk , sans-serif;
   background-color: #f0f2f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   margin: 0;
 }
@@ -23,7 +20,7 @@ body {
 main {
   flex: 1;
   padding: 20px;          
-  margin-top: 80px;       
+  margin-top: 150px;       
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
