@@ -1,5 +1,7 @@
 body, html {
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -61,9 +63,8 @@ body, html {
 }
 
 
-/*For the 2nd Navigation bar*/
+/*For the popping up nav bar*/
 #Nav2 {
-    /* Make the main bar a full-width horizontal flex container using Grotesk */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,8 +74,7 @@ body, html {
     padding: 0;
     width: 100%;
     font-family: Grotesk, sans-serif;
-    font-size: 18px;        /* larger font so it's visibly prominent */
-    height: 64px;          /* taller bar */
+    font-size: 18px;       
     box-sizing: border-box;
 }
 
@@ -89,7 +89,7 @@ body, html {
     width: 100%;
     font-family: Grotesk, sans-serif;
     font-size: 12px;
-    height: 36px;          /* smaller height */
+    height: 36px;          
     box-sizing: border-box;
 }
 
