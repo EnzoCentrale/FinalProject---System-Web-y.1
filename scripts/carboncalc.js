@@ -25,13 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to load the model
     async function loadModel() {
-        // Check if the Teachable Machine library is loaded
         if (typeof tmImage === 'undefined') {
             console.error("Error: Teachable Machine library not found. Ensure you have included the TensorFlow.js and Teachable Machine scripts in your HTML head.");
             items.forEach(item => {
                 const detectionText = item.querySelector('.detection-text');
                 detectionText.textContent = 'Error: Libraries missing.';
-                detectionText.style.color = 'red';
             });
             return;
         }

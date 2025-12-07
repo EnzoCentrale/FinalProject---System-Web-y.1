@@ -1,0 +1,11 @@
+body{
+    background-color: #eaeaea;
+}
+
+.text{
+    font-size: 48px;
+    font-family: SwitzerBold;
+    position: relative;
+    left: 22%;
+    top: 2%;
+}

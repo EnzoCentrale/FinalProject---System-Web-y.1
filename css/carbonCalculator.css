@@ -35,14 +35,14 @@ body {
     font-family: Grotesk, sans-serif;
     color: #aaa;
     background-color: #f9f9f9;
-    overflow: hidden; /* Ensures image doesn't spill out */
+    overflow: hidden; 
 }
 
 .preview-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Scales the image to cover the box without distortion */
-    display: none; /* Initially hidden */
+    object-fit: cover; 
+    display: none; 
 }
 
 .plus {
