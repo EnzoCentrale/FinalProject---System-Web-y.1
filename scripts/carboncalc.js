@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             items.forEach(item => {
                 const detectionText = item.querySelector('.detection-text');
                 detectionText.textContent = 'Error: Libraries missing.';
+                detectionText.style.color = 'red';
             });
             return;
         }
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isModelLoaded = true;
             console.log("Model loaded successfully");
             
-            // Debug: Log the classes found in the model to help match with carbonData
+            // Debug: Log the classes found in the model to help match with our data 
             console.log("Model classes detected:", model.getClassLabels());
 
             // Update UI for all items now that model is loaded

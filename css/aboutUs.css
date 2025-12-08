@@ -1,11 +1,9 @@
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background: #eef2ee;
     margin: 0;
 }
 
 section {
-    background: white;
     width: 75%;
     margin: 40px auto;
     padding: 25px;

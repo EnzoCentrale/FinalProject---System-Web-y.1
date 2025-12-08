@@ -1,6 +1,5 @@
 body {
   font-family: Grotesk , sans-serif;
-  background-color: #f0f2f5;
   min-height: 100vh;
   margin: 0;
 }
@@ -11,11 +10,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
 
 main {
   flex: 1;
