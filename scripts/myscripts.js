@@ -1,6 +1,4 @@
-
-
-// This first part is all for the navigation Bar
+// SCRIPT FOR The NAvvv BAr
 const modal = document.getElementById("modal");
 
 // Show modal: set display to block and stop background scrolling

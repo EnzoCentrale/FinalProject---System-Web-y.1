@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load the model
     async function loadModel() {
         if (typeof tmImage === 'undefined') {
-            console.error("Error: Teachable Machine library not found. Ensure you have included the TensorFlow.js and Teachable Machine scripts in your HTML head.");
+            console.error("Error: Teachable Machine library not found");
             items.forEach(item => {
                 const detectionText = item.querySelector('.detection-text');
                 detectionText.textContent = 'Error: Libraries missing.';
@@ -87,16 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     previewImage.style.display = 'block';
                     detectionText.textContent = 'Analyzing...';
 
-                    // This fixes the issue where it predicts on an empty/old image
                     previewImage.onload = async () => {
-                        // Make a prediction
                         const predictions = await model.predict(previewImage);
-                        
-                        // Get the top prediction
                         const topPrediction = predictions.reduce((prev, current) => (prev.probability > current.probability) ? prev : current);
-                        
                         const className = topPrediction.className;
-                        
                         // Debug: Check exactly what the model sees in the console
                         console.log(`Detected class: "${className}"`);
 
